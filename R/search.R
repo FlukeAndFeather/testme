@@ -1,3 +1,16 @@
+#' Binary search
+#'
+#' Use the binary search algorithm to efficiently find the index of elements in a vector.
+#'
+#' @param vec `[numeric]` A sorted vector of numbers.
+#' @param x `[numeric(1)]` The search value.
+#'
+#' @return The index of `x` in `vec`. If `x` isn't in `vec`, returns 0.
+#' @export
+#'
+#' @examples
+#' x <- 1:10
+#' binary_search(5)
 binary_search <- function(vec, x) {
   low <- 1
   high <- length(vec)
